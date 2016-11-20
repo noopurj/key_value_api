@@ -1,0 +1,1 @@
+json.array! @api_objects, partial: 'api_objects/api_object', as: :api_object

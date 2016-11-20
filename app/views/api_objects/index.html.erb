@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Api Objects</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @api_objects.each do |api_object| %>
+      <tr>
+        <td><%= api_object.key %></td>
+        <td><%= api_object.value %></td>
+        <td><%= link_to 'Show', api_object %></td>
+        <td><%= link_to 'Edit', edit_api_object_path(api_object) %></td>
+        <td><%= link_to 'Destroy', api_object, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Api object', new_api_object_path %>

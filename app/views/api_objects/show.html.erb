@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Key:</strong>
+  <%= @api_object.key %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @api_object.value %>
+</p>
+
+<%= link_to 'Edit', edit_api_object_path(@api_object) %> |
+<%= link_to 'Back', api_objects_path %>

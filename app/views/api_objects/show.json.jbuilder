@@ -1,0 +1,1 @@
+json.partial! "api_objects/api_object", api_object: @api_object
